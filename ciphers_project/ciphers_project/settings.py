@@ -129,6 +129,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "https://tariqnb.github.io",
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://tariqnb.github.io/numbersApp/",
+    "https://tariqnb.github.io/numbersApp"
 ]
 
