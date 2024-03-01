@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-3l6z$!*k$&r1y2o088667ne2_m&und5$qbo$uo-u%^&f061-^g
 DEBUG = True
 
 ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '/ciphers-service-latest-1.onrender.com']
 
 
 # Application definition
@@ -125,12 +126,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-ALLOWED_HOSTS = ['localhost', '0.0.0.0', 'ciphers-service-tariqnb.onrender.com', 'ciphers-service-latest-1.onrender.com']
-
-
-
 CORS_ALLOWED_ORIGINS = [
     "https://tariqnb.github.io",
     "http://localhost:3000"
 ]
+
