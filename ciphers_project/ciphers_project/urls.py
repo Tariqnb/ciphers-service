@@ -16,10 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect
+
+def redirect_to_ciphers(request):
+    return redirect('/ciphers/')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ciphers/', include('api.urls'))
+    path('ciphers/', include('api.urls')),
+    path('', redirect_to_ciphers),  # Redirect root URL to /ciphers/
 ]
-
 
